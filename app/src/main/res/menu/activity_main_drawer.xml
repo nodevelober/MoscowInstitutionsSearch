@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <!--<item android:id="@+id/home"-->
+            <!--android:title="Главная" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/distance"-->
+            <!--android:title="Длина маршрута"/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/add_point"-->
+            <!--android:title="Добавить точку"/>-->
+
+        <item android:id="@+id/statictica"
+              android:title="Статистика"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Фильтр" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="Справка" />
+
+        <!--<item android:id="@+id/help"-->
+            <!--android:title="Справка">-->
+
+        <!--</item>-->
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:title="Выход" />
+        </menu>
+    </item>
+
+</menu>

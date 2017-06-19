@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Применить фильтр:"/>
+
+
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фильтр"
+        android:inputType="text"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/filter_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="По умолчанию 5000 м"
+        android:inputType="number"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:maxLength="9"
+        android:layout_above="@+id/btn"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Применить"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ed_search"
+        android:layout_above="@+id/ed"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

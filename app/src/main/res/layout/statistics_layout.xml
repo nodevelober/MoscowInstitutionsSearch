@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статистика"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+    <ListView
+        android:id="@+id/lv_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_statistics"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+    </ListView>
+</RelativeLayout>
